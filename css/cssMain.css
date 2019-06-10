@@ -1,0 +1,384 @@
+﻿
+body {
+    background-image: url(images/background.png);
+    padding: 0;
+    margin: 0;
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+    0% {
+        background: #f7184c;
+    }
+    /* Red */
+    25% {
+        background: #f7ce18;
+    }
+    /* Yellow */
+    50% {
+        background: #189df7;
+    }
+    /* Blue */
+    75% {
+        background: #07fcaa;
+    }
+    /* Green */
+    100% {
+        background: #f7184c;
+    }
+    /* Red */
+}
+
+table {
+    margin-top: 20px;
+}
+
+.cards {
+    width: 180px;
+    height: 120px;
+    margin: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+#infoHeader {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 230px;
+    height: 760px;
+    position: absolute;
+    background-color: #111845a4;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+}
+
+img {
+    width: 180px;
+    height: 120px;
+    margin: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+#coverImage img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+
+.counter {
+    background-color: #0071BB;
+    font-family: "Arial";
+    font-size: 20px;
+    color: white;
+    width: 150px;
+    padding: 7px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+    border-radius: 30px;
+    margin-bottom: 5px;
+}
+
+.counterNum {
+    display: inline;
+    background-color: whitesmoke;
+    padding: 1px 3px;
+    float: right;
+    width: 35%;
+    color: #1A1B1A;
+    text-align: center;
+    border: 2px solid #FFF;
+    border-radius: 30px;
+}
+
+#msgbetween {
+    background: #111845a4;
+    color: whitesmoke;
+    margin: auto auto;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    padding: 40px 3px;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    width: 600px;
+    height: 370px;
+    float: left;
+    margin-left: 300px;
+    margin-top: 100px;
+    border-radius: 10px;
+    border: 1px solid wheat;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+#tableHighS {
+    margin-left: 90px;
+    border-collapse: collapse;
+    width: 70%;
+    font-weight: bold;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    border: 1px dashed wheat;
+    font-size: 25px;
+}
+
+    #tableHighS tbody {
+        border: 1px dashed wheat;
+        border-collapse: collapse;
+    }
+
+    #tableHighS td {
+        padding: 3px;
+    }
+
+.counter {
+    background-color: #0071BB;
+    font-family: "Arial";
+    font-size: 20px;
+    color: white;
+    width: 150px;
+    padding: 7px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+    border-radius: 30px;
+}
+
+.counterNum {
+    display: inline;
+    background-color: whitesmoke;
+    padding: 1px 3px;
+    float: right;
+    width: 35%;
+    color: #1A1B1A;
+    text-align: center;
+    border: 2px solid #FFF;
+    border-radius: 30px;
+}
+
+.animatImg {
+    transform: rotateY(360deg);
+    transition: ease-in-out 1s;
+    cursor: default;
+    width: 180px;
+    height: 120px;
+    margin: 7px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.hiddenDiv {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    height: 700px;
+    width: 1100px;
+}
+
+.mainDiv {
+    background-color: #00B6BD;
+    display: flex;
+    position: relative;
+    align-content: center;
+    flex-direction: column;
+    top: 130px;
+    left: 400px;
+    width: 500px;
+    z-index: 12;
+    border: 15px solid #00A7AE;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+    .mainDiv img {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        max-width: 100%;
+        width: 50%;
+        height: auto;
+    }
+
+    .mainDiv button {
+        border: 3px solid #fdb912;
+        border-radius: 10px;
+        margin: 5px auto;
+        padding: 3px;
+        color: white;
+        font-family: "Comic Sans MS","Arial";
+        font-weight: bold;
+        font-size: 35px;
+        width: 230px;
+        cursor: pointer;
+    }
+
+#name {
+    background-color: whitesmoke;
+    color: #1a1b1a;
+    margin: 10px auto;
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+    border-radius: 5px;
+    padding-left: 8px;
+}
+
+#entername {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    font-family: 'Comic Sans MS';
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#easy {
+    background: linear-gradient(to bottom, #ffde00 0%, #fdb912 100%);
+}
+
+#new {
+    background: linear-gradient(to bottom, #ffde00 0%, #fdb912 100%);
+}
+
+#medium {
+    background: linear-gradient(to bottom, #d2e27e 0%, #aec52b 100%);
+}
+
+#hs {
+    background: linear-gradient(to bottom, #d2e27e 0%, #aec52b 100%);
+}
+
+#hard {
+    background: linear-gradient(to bottom, #92ceec 0%, #0093cf 100%);
+}
+
+#easy:hover {
+    background: linear-gradient(to bottom, #ffa900 0%, #f2810c 100%);
+}
+
+#new:hover {
+    background: linear-gradient(to bottom, #ffa900 0%, #f2810c 100%);
+}
+
+#medium:hover {
+    background: linear-gradient(to bottom, #9aaf54 0%, #788c1c 100%);
+}
+
+#hs:hover {
+    background: linear-gradient(to bottom, #9aaf54 0%, #788c1c 100%);
+}
+
+#hard:hover {
+    background: linear-gradient(to bottom, #5b9aed 0%, #00629c 100%);
+}
+
+.gameSound {
+    background-color: #0071BB;
+    padding: 7px;
+    margin-top: 5px;
+    border-radius: 30px;
+}
+
+    .gameSound button {
+        border: 1px solid white;
+        background: #F68B1F;
+        background-image: url(images/Speaker_35px.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-origin: content-box;
+        width: 50px;
+        height: 30px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+.container {
+    width: 194px;
+    height: 130px;
+    position: relative;
+    text-align: center;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+
+    .card div {
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 260px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 140px;
+        position: absolute;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .card .back {
+        -webkit-transform: rotateY( 180deg );
+        -moz-transform: rotateY( 180deg );
+        -o-transform: rotateY( 180deg );
+        transform: rotateY( 180deg );
+    }
+
+    .card.flipped {
+        -webkit-transform: rotateY( 180deg );
+        -moz-transform: rotateY( 180deg );
+        -o-transform: rotateY( 180deg );
+        transform: rotateY( 180deg );
+    }
+
+.mainDiv input[type="text"] {
+    width: 50%;
+    background-color: wheat;
+    border: 3px solid #00B6BD;
+    outline: none;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+    .mainDiv input[type="text"]:focus {
+        border-color: crimson;
+        box-shadow: 0 0 8px 0 crimson;
+    }
+
+.mainDiv img {
+    box-shadow: none;
+    cursor: default;
+}
+
+#coverImage img {
+    cursor: default;
+}
